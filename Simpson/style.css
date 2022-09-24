@@ -1,0 +1,140 @@
+body {
+    background-color: #ffd044;
+    overflow-wrap: anywhere;
+}
+
+.big {
+    display: flex;
+
+}
+
+.rer {
+    display: flex;
+}
+
+.eye {
+
+    background-color: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 3px solid;
+    position: relative;
+    left: 20px;
+}
+
+.eye1 {
+    background-color: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 3px solid;
+    z-index: -2;
+}
+
+
+.ball {
+    background-color: black;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    animation: chmo 3s infinite linear;
+
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.nose {
+    background-color: #ffd044;
+    position: relative;
+    z-index: -1;
+    top: 89px;
+    right: 105px;
+    border: 3px solid;
+    width: 80px;
+    height: 40px;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 50%;
+    border-left: transparent;
+    border-bottom-left-radius: 40%;
+}
+
+.text {
+    width: 25%;
+
+}
+
+p {
+    background-color: white;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 24px;
+    font-family: "Bebas Neue";
+    padding: 10px;
+    margin: 0;
+
+}
+
+.krug {
+    display: none;
+    background-color: white;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.tet {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    bottom: 10px;
+    left: 80px;
+}
+
+.tet1 {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 10px;
+    left: 40px;
+}
+
+.tet2 {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: 10px;
+    margin-top: 15px;
+}
+
+@keyframes chmo {
+
+    0%,
+    10%,
+    100% {
+        transform: translateX(0);
+    }
+
+    30%,
+    70% {
+        transform: translateX(40px);
+    }
+}
+
+@media (max-width: 770px) {
+    .big {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .krug {
+        display: flex;
+    }
+
+    .text {
+        width: 100%;
+
+    }
+}
+}
